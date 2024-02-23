@@ -15,7 +15,7 @@ The decoder has the following features,
   - 12 channel output
   - Charlieplexing (Multiplexing) output
   - 128 step PWM (300Hz)
-  - Software adjustable LED voltage (3..5V)
+  - Software adjustable LED voltage (0..5V)
   - gamma correction (optional)
 - firmware update via V24 debug interface
 
