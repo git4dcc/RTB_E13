@@ -5,7 +5,7 @@
 This E13 module implements a 12 channel WS2811 emulator with compatible bus timing to drive multiplex (charlieplexing) LEDs. The E13 may be cascaded with regular WS28xx chips. The number of LEDs is fixed to 12. The common LED voltage is recieved via the bus as well and may be adjusted dynamically.
 
 ```
-{voltage} {led_0} ... {led_11}
+Byte order received: {voltage} {led_0} ... {led_11}
 ```
 
 The decoder has the following features,
