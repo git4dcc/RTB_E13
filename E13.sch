@@ -81,15 +81,15 @@ $EndComp
 $Comp
 L Device:R R18
 U 1 1 606D9C59
-P 3100 1350
-F 0 "R18" V 2893 1350 50  0001 C CNN
-F 1 "160" V 3100 1350 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 3030 1350 50  0001 C CNN
-F 3 "~" H 3100 1350 50  0001 C CNN
-	1    3100 1350
+P 3100 1300
+F 0 "R18" V 2893 1300 50  0001 C CNN
+F 1 "160" V 3100 1300 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 3030 1300 50  0001 C CNN
+F 3 "~" H 3100 1300 50  0001 C CNN
+	1    3100 1300
 	-1   0    0    1   
 $EndComp
-Text GLabel 3100 1200 1    50   Input ~ 0
+Text GLabel 3100 1150 1    50   Input ~ 0
 DI
 $Comp
 L Device:R R19
@@ -487,23 +487,23 @@ NoConn ~ 2700 5700
 $Comp
 L Device:R R15
 U 1 1 606C55DD
-P 2800 1350
-F 0 "R15" V 2593 1350 50  0001 C CNN
-F 1 "120" V 2800 1350 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 2730 1350 50  0001 C CNN
-F 3 "~" H 2800 1350 50  0001 C CNN
-	1    2800 1350
+P 2800 1300
+F 0 "R15" V 2593 1300 50  0001 C CNN
+F 1 "120" V 2800 1300 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 2730 1300 50  0001 C CNN
+F 3 "~" H 2800 1300 50  0001 C CNN
+	1    2800 1300
 	-1   0    0    1   
 $EndComp
 $Comp
 L Device:R R16
 U 1 1 606C55E7
-P 3000 1350
-F 0 "R16" V 2793 1350 50  0001 C CNN
-F 1 "120" V 3000 1350 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 2930 1350 50  0001 C CNN
-F 3 "~" H 3000 1350 50  0001 C CNN
-	1    3000 1350
+P 3000 1300
+F 0 "R16" V 2793 1300 50  0001 C CNN
+F 1 "120" V 3000 1300 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 2930 1300 50  0001 C CNN
+F 3 "~" H 3000 1300 50  0001 C CNN
+	1    3000 1300
 	-1   0    0    1   
 $EndComp
 $Comp
@@ -528,14 +528,10 @@ Wire Wire Line
 	1500 5600 1750 5600
 Text Notes 1250 5900 0    50   ~ 0
 n.f.
-Text GLabel 3000 1200 1    50   Input ~ 0
+Text GLabel 2900 1150 1    50   Input ~ 0
 OUT2
-Text GLabel 2800 1200 1    50   Input ~ 0
+Text GLabel 2800 1150 1    50   Input ~ 0
 OUT3
-NoConn ~ 3200 1500
-NoConn ~ 3300 1500
-NoConn ~ 3400 1500
-NoConn ~ 3500 1500
 NoConn ~ 4600 2200
 $Comp
 L power:GND #PWR0103
@@ -640,8 +636,6 @@ F 3 "" H 2900 3100 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 NoConn ~ 2800 3100
-NoConn ~ 2100 2400
-NoConn ~ 2100 2300
 $Comp
 L power:VDD #PWR0112
 U 1 1 65DDBDFD
@@ -693,22 +687,21 @@ F 3 "" H 5200 1150 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	5050 850  5200 850 
-NoConn ~ 2100 2500
 Text GLabel 2100 2000 0    50   Input ~ 0
 DAC
 Text GLabel 5050 850  0    50   Input ~ 0
 DAC
-Text GLabel 2900 1200 1    50   Input ~ 0
+Text GLabel 3000 1150 1    50   Input ~ 0
 OUT1
 $Comp
 L Device:R R17
 U 1 1 606C55F1
-P 2900 1350
-F 0 "R17" V 2693 1350 50  0001 C CNN
-F 1 "120" V 2900 1350 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 2830 1350 50  0001 C CNN
-F 3 "~" H 2900 1350 50  0001 C CNN
-	1    2900 1350
+P 2900 1300
+F 0 "R17" V 2693 1300 50  0001 C CNN
+F 1 "120" V 2900 1300 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 2830 1300 50  0001 C CNN
+F 3 "~" H 2900 1300 50  0001 C CNN
+	1    2900 1300
 	-1   0    0    1   
 $EndComp
 Text GLabel 1800 1900 0    50   Input ~ 0
@@ -724,5 +717,41 @@ F 3 "~" H 1950 1900 50  0001 C CNN
 	1    1950 1900
 	0    1    1    0   
 $EndComp
-NoConn ~ 2100 2100
+Text GLabel 2100 2100 0    50   Input ~ 0
+OUT1
+Text GLabel 2100 2300 0    50   Input ~ 0
+OUT2
+Text GLabel 2100 2400 0    50   Input ~ 0
+OUT3
+Text GLabel 2100 2500 0    50   Input ~ 0
+OUT4
+$Comp
+L Device:R_Pack04 RN1
+U 1 1 661ED67C
+P 3400 1300
+F 0 "RN1" H 3588 1346 50  0001 L CNN
+F 1 "4x 22k" H 3588 1300 50  0000 L CNN
+F 2 "Resistor_SMD:R_Array_Convex_4x0603" V 3675 1300 50  0001 C CNN
+F 3 "~" H 3400 1300 50  0001 C CNN
+	1    3400 1300
+	1    0    0    -1  
+$EndComp
+Text GLabel 3200 1100 1    50   Input ~ 0
+OUT1
+Text GLabel 3300 1100 1    50   Input ~ 0
+OUT2
+Text GLabel 3400 1100 1    50   Input ~ 0
+OUT3
+Text GLabel 3500 1100 1    50   Input ~ 0
+OUT4
+Wire Wire Line
+	2800 1450 2800 1500
+Wire Wire Line
+	2900 1500 2900 1450
+Wire Wire Line
+	3000 1500 3000 1450
+Wire Wire Line
+	3100 1500 3100 1450
+Text Notes 3600 1250 0    50   ~ 0
+n.f. (for LED dim tuning)
 $EndSCHEMATC
