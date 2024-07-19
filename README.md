@@ -29,7 +29,7 @@ My current PCB layout uses SMD footprints with 0.5mm pitch and 0603 parts. Reflo
 - 2-layer PCB, FR4, 1.6mm
 - CPU: AVR64DB32
 - BUS: WS28xx
-- LED: Charliwplexing
+- LED: Charlieplexing
 
 [Schematic](doc/E13_schematic.pdf) | [Layout](doc/E13_layout.pdf) | [Gerber](gerber)
 
