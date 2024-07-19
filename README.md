@@ -24,6 +24,8 @@ The decoder has the following features,
 [more](https://rtb4dcc.de/hardware/modules/e13/)
 
 # Hardware
+My current PCB layout uses SMD footprints with 0.5mm pitch and 0603 parts. Reflow soldering is my recommendation, but with some experience handsoldering is also possible.
+
 ## PCB
 <img src="https://rtb4dcc.de/wp-content/uploads/2024/01/E13_1-1.png" width=500>
 
