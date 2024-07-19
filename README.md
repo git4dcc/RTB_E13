@@ -3,7 +3,7 @@
 [![Kicad_Libs](https://img.shields.io/badge/Kicad_Libs-29C7FF)](https://github.com/git4dcc/RTB_SamacSys)
 [![Apache License 2.0](https://img.shields.io/badge/license-Apache%20License%202.0-lightgray)](https://www.apache.org/licenses/LICENSE-2.0)
 
-This E13 module implements a 12 channel WS2811 emulator with compatible bus timing to drive multiplex (charlieplexing) LEDs. The E13 may be cascaded with regular WS28xx chips. The number of LEDs is fixed to 12. The common LED voltage is recieved via the bus as well and may be adjusted dynamically.
+This E13 module implements a 12 channel WS2811 emulator with compatible bus timing to drive multiplex (charlieplexing) LEDs. The E13 may be cascaded with regular WS28xx chips. The number of LEDs is fixed to 12. The common LED voltage is recieved via the bus as well and may be adjusted dynamically.  (see also [E10](https://github.com/git4dcc/RTB_E10), [E15](https://github.com/git4dcc/RTB_E15))
 
 ```
 Byte order:     {voltage} {led_0} ... {led_11}
@@ -23,7 +23,8 @@ The decoder has the following features,
 
 [more](https://rtb4dcc.de/hardware/modules/e13/)
 
-# PCB
+# Hardware
+## PCB
 <img src="https://rtb4dcc.de/wp-content/uploads/2024/01/E13_1-1.png" width=500>
 
 - 2-layer PCB, FR4, 1.6mm
@@ -34,7 +35,7 @@ The decoder has the following features,
 
 [Schematic](doc/E13_schematic.pdf) | [Layout](doc/E13_layout.pdf)
 
-# Firmware
+## Firmware
 Filename structure: { **pcb** }{ **code** }{ **version** }.hex
 
 Example: **E13F0001**.hex
@@ -44,3 +45,8 @@ Example: **E13F0001**.hex
 | **pcb** | Name of matching hardware (**E13**) |
 | **code** | Type of code contained (**R**=rom, **B**=bootloader, **F**=flash, **U**=bld update, **P**=UPDI factory code) |
 | **version** | Release version (**####**) |
+
+# Pictures
+<img src=https://rtb4dcc.de/wp-content/uploads/2024/02/E13_3.jpg width=260>
+
+This project is intended for hobby use only and is distributed in accordance with the Apache License 2.0 agreement.
