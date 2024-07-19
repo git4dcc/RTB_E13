@@ -11,7 +11,7 @@ Comp "Frank Schumacher"
 Comment1 "WS2811 chip emulator for 12 multiplex LEDs"
 Comment2 ""
 Comment3 ""
-Comment4 ""
+Comment4 "Licensed under the Apache License, Version 2"
 $EndDescr
 Text GLabel 4600 2500 2    50   Input ~ 0
 UPDI
