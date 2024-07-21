@@ -3,7 +3,7 @@
 [![Kicad_Libs](https://img.shields.io/badge/Kicad_Libs-29C7FF)](https://github.com/git4dcc/RTB_SamacSys)
 [![Apache License 2.0](https://img.shields.io/badge/license-Apache%20License%202.0-lightgray)](https://www.apache.org/licenses/LICENSE-2.0)
 
-This E13 module implements a 12 channel WS2811 emulator with compatible bus timing to drive multiplex (charlieplexing) LEDs. The E13 may be cascaded with regular WS28xx chips. The number of LEDs is fixed to 12. Optionally, the common LED voltage can be controlled over the bus as well.  (see also [E10](https://github.com/git4dcc/RTB_E10), [E15](https://github.com/git4dcc/RTB_E15))
+This E13 module implements a 12 channel WS2811 emulator with compatible bus timing to drive multiplex (charlieplexing) LEDs. The E13 may be cascaded with regular WS28xx chips. The number of LEDs attached is automatically detected (0-12). This module allows the common LED voltage be dynamically adjusted via the bus protocol.  (see also [E10](https://github.com/git4dcc/RTB_E10), [E15](https://github.com/git4dcc/RTB_E15))
 
 - [User Guide - DE](https://rtb4dcc.de/ws2811_guide_de/)<br>
 - User Guide - EN
@@ -32,7 +32,7 @@ My current PCB layout uses SMD footprints with 0.5mm pitch and 0603 parts. Reflo
 - LED: Charlieplexing
 
 ## Kicad
-:yellow_square: Dependency: Requires my Kicad project library [RTB_SamacSys](https://github.com/git4dcc/RTB_SamacSys)
+:yellow_circle: Dependency: Requires my Kicad project library [RTB_SamacSys](https://github.com/git4dcc/RTB_SamacSys)
 
 [Schematic](doc/E13_schematic.pdf) | [Layout](doc/E13_layout.pdf) | [Gerber](gerber)
 
@@ -61,7 +61,7 @@ Subsequent code updates can be done via the built-in serial debug interface.<br>
 
 - connect the serial cable (1Mb, 8N1, RTS/CTS)
 - press 'break' within the VT100 terminal to bump the module to console prompt
-- upload the firmware file (E10Fxxxx.hex)
+- upload the firmware file (E13Fxxxx.hex)
 - for more details, refer to the 'User Guide'
 
 <img src="https://rtb4dcc.de/wp-content/uploads/2024/07/un_E13_Rom.png" width=500>
