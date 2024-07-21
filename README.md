@@ -3,7 +3,7 @@
 [![Kicad_Libs](https://img.shields.io/badge/Kicad_Libs-29C7FF)](https://github.com/git4dcc/RTB_SamacSys)
 [![Apache License 2.0](https://img.shields.io/badge/license-Apache%20License%202.0-lightgray)](https://www.apache.org/licenses/LICENSE-2.0)
 
-This E13 module implements a 12 channel WS2811 emulator with compatible bus timing to drive multiplex (charlieplexing) LEDs. The E13 may be cascaded with regular WS28xx chips. The number of LEDs attached is automatically detected (0-12). This module allows the common LED voltage be dynamically adjusted via the bus protocol as opposed to [E15](https://github.com/git4dcc/RTB_E15) which provides a fixed common LED voltage .  (see also [E10](https://github.com/git4dcc/RTB_E10), [E15](https://github.com/git4dcc/RTB_E15))
+This E13 module implements a 12 channel WS2811 emulator with compatible bus timing to drive multiplex (charlieplexing) LEDs. The E13 may be cascaded with regular WS28xx chips. The number of LEDs attached is automatically detected (0-12). This module allows the common LED voltage be dynamically adjusted via the bus protocol.  (see also [E10](https://github.com/git4dcc/RTB_E10), [E15](https://github.com/git4dcc/RTB_E15))
 
 - [User Guide - DE](https://rtb4dcc.de/ws2811_guide_de/)<br>
 - User Guide - EN
@@ -17,7 +17,7 @@ The decoder has the following features,
   - 12 channel output
   - Charlieplexing (Multiplexing) output
   - 128 step PWM (300Hz)
-  - Software adjustable LED voltage (0..5V)
+  - Software adjustable LED voltage 0..5V (see also [E15](https://github.com/git4dcc/RTB_E15))
   - gamma correction (optional)
 - firmware update via V24 debug interface
 
@@ -67,9 +67,9 @@ Subsequent code updates can be done via the built-in serial debug interface.<br>
 <img src="https://rtb4dcc.de/wp-content/uploads/2024/07/un_E13_Rom.png" width=500>
 
 # Software
-The LED common voltage must be sent as the first byte (virtual LED) over the bus followed by the intensity values for the individual LEDs.
+The LED common voltage must be sent as the first byte (virtual LED) over the bus followed by the intensity values for the individual LEDs, with N being the number of configured LEDs.
 ```
-Byte order:     {voltage} {led_0} ... {led_11}
+Byte order:     {voltage} {led_0} ... {led_N}
 Led Voltage:    5V * {voltage} / 255
 ```
 
