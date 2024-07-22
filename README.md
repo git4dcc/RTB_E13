@@ -7,6 +7,8 @@
   
 This E13 module implements a 12 channel WS2811 emulator with compatible bus timing to drive multiplex (charlieplexing) LEDs. The E13 may be cascaded with regular WS28xx chips. The number of LEDs attached is automatically detected (0-12). This module allows the common LED voltage be dynamically adjusted via the bus protocol. The intended use is to drive Multiplex Signals on Model Railway layouts via the WS28xx bus.
 
+_Note: The E13 is nearly identical to the [E15](https://github.com/git4dcc/RTB_E15), but allows for variable LED voltage._
+
 - [User Guide - DE](https://rtb4dcc.de/ws2811_guide_de/)<br>
 - User Guide - EN
 
