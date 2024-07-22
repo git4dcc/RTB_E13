@@ -77,7 +77,7 @@ Byte order:     {voltage} {led_0} ... {led_N}
 Led Voltage:    5V * {voltage} / 255
 ```
 
-# Pictures
+# Images
 <img src=https://rtb4dcc.de/wp-content/uploads/2024/02/E13_3.jpg width=260>
 
 This project is intended for hobby use only and is distributed in accordance with the Apache License 2.0 agreement.
