@@ -53,7 +53,7 @@ My current PCB layout uses SMD footprints with 0.5mm pitch and 0603 parts. Reflo
 
 <details>
 <summary>Dependency</summary>
-
+<br>
 :yellow_circle: Requires my Kicad project library [RTB_SamacSys](https://github.com/git4dcc/RTB_SamacSys) in the same directory tree.
 
 </details>
