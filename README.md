@@ -89,7 +89,7 @@ Subsequent code updates can be done via the built-in serial debug interface.<br>
 <details>
 <summary>Details</summary>
 
-- connect the serial cable (1Mb, 8N1, RTS/CTS)
+- connect the serial cable **(1Mb, 8N1, RTS/CTS)**
 - press 'break' within the VT100 terminal to bump the module to console prompt
 - upload the firmware file (E13Fxxxx.hex)
 - for more details, refer to the 'User Guide'
