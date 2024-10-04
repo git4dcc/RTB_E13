@@ -76,11 +76,11 @@ The fuse settings as well as the P-code (E13Pxxxx.hex) has to be installed by us
 <details>
 <summary>Details</summary>
 
-<img src=https://rtb4dcc.de/wp-content/uploads/2024/07/un_E13_4.jpg>
+<img src=supplemental/images/E13_updi.jpg>
 
 | Fuse Setting | P-code Install |
 | --- | --- |
-|<img src="https://rtb4dcc.de/wp-content/uploads/2024/07/un_E13_Fuses.png" width=500>|<img src="https://rtb4dcc.de/wp-content/uploads/2024/07/un_E13_Mem.png" width=500>|
+|<img src=supplemental/images/E13_updi_fuses.jpg width=500>|<img src=supplemental/images/E13_updi_memory.jpg width=500>|
 
 </details>
 
@@ -95,7 +95,7 @@ Subsequent code updates can be done via the built-in serial debug interface.<br>
 - upload the firmware file (E13Fxxxx.hex)
 - for more details, refer to the 'User Guide'
 
-  <img src="https://rtb4dcc.de/wp-content/uploads/2024/07/un_E13_Rom.png">
+  <img src=supplemental/images/E13_debugIF.jpg>
 
 </details>
 
