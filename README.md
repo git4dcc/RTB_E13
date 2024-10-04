@@ -23,7 +23,7 @@ _Note: The RTB_E13 is nearly identical to the [RTB_E15](https://github.com/git4d
 
 </details>
 
-<img src="https://rtb4dcc.de/wp-content/uploads/2024/01/E13_1-1.png">
+<img src=supplemental/images/E13_main.jpg>
 
 The decoder has the following features,
 - **Protocol**
@@ -40,7 +40,7 @@ The decoder has the following features,
 # Hardware
 My current PCB layout uses SMD footprints with 0.5mm pitch and 0603 parts. Reflow soldering is my recommendation, but with some experience handsoldering is also possible.
 
-<img src=https://rtb4dcc.de/wp-content/uploads/2024/07/un_E13_5.png>
+<img src=supplemental/images/E13_top_connect.jpg>
 
 ## PCB
 - 2-layer PCB, FR4, 1.6mm
@@ -107,6 +107,6 @@ Led Voltage:    5V * {voltage} / 255
 ```
 
 # Images
-<img src=https://rtb4dcc.de/wp-content/uploads/2024/02/E13_3.jpg width=260> <img src=https://rtb4dcc.de/wp-content/uploads/2024/01/un_E13_example1.png width=260>
+<img src=supplemental/images/E13_samples.jpg width=260> <img src=supplemental/images/E13_usecase.jpg width=260>
 
 This project is intended for hobby use only and is distributed in accordance with the Apache License 2.0 agreement.
