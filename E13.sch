@@ -5,7 +5,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "RTB E13 module"
-Date "2024-02-23"
+Date "2024-11-14"
 Rev "1"
 Comp "Frank Schumacher"
 Comment1 "WS2811 chip emulator for 12 multiplex LEDs"
@@ -71,8 +71,8 @@ $Comp
 L Connector_Generic:Conn_01x04 J7
 U 1 1 60679519
 P 9100 1750
-F 0 "J7" H 9300 1600 50  0000 R CNN
-F 1 "Multiplex out" H 9700 1700 50  0000 R CNN
+F 0 "J7" H 9300 1650 50  0000 R CNN
+F 1 "Multiplex out" H 9700 1750 50  0000 R CNN
 F 2 "RTB_parts:1725672" H 9100 1750 50  0001 C CNN
 F 3 "~" H 9100 1750 50  0001 C CNN
 	1    9100 1750
@@ -82,7 +82,7 @@ $Comp
 L Device:R R18
 U 1 1 606D9C59
 P 3100 1300
-F 0 "R18" V 2893 1300 50  0001 C CNN
+F 0 "R18" V 3600 1300 50  0000 C CNN
 F 1 "160" V 3100 1300 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 3030 1300 50  0001 C CNN
 F 3 "~" H 3100 1300 50  0001 C CNN
@@ -95,7 +95,7 @@ $Comp
 L Device:R R19
 U 1 1 606DE0A7
 P 1950 2200
-F 0 "R19" V 1743 2200 50  0001 C CNN
+F 0 "R19" V 2050 2000 50  0000 C CNN
 F 1 "160" V 1950 2200 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 1880 2200 50  0001 C CNN
 F 3 "~" H 1950 2200 50  0001 C CNN
@@ -351,9 +351,9 @@ Wire Notes Line
 	1050 7050 3800 7050
 Wire Notes Line
 	3800 7050 3800 4100
-Text Notes 1100 4300 0    79   ~ 0
+Text Notes 1100 4300 0    79   ~ 16
 Power
-Text Notes 4500 4250 0    79   ~ 0
+Text Notes 4500 4300 0    79   ~ 16
 Interfaces
 Wire Notes Line
 	1050 3850 6600 3850
@@ -363,10 +363,10 @@ Wire Notes Line
 	6600 700  1050 700 
 Wire Notes Line
 	1050 700  1050 3850
-Text Notes 1150 900  0    79   ~ 0
+Text Notes 1150 900  0    79   ~ 16
 CPU
-Text Notes 7850 900  0    79   ~ 0
-Muliplex Signal connector
+Text Notes 7850 900  0    79   ~ 16
+Multiplex Signal connector
 $Comp
 L power:GND #PWR0106
 U 1 1 65698D2B
@@ -382,8 +382,8 @@ $Comp
 L Device:C C1
 U 1 1 656982B2
 P 1750 5850
-F 0 "C1" H 1865 5896 50  0001 L CNN
-F 1 "4.7u/10V" H 1800 5700 50  0000 L CNN
+F 0 "C1" H 1800 5750 50  0000 L CNN
+F 1 "4.7u/10V" H 1800 5650 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric" H 1788 5700 50  0001 C CNN
 F 3 "~" H 1750 5850 50  0001 C CNN
 	1    1750 5850
@@ -393,30 +393,30 @@ $Comp
 L Device:C C4
 U 1 1 6591D86E
 P 3000 5850
-F 0 "C4" H 3115 5896 50  0001 L CNN
-F 1 "4.7u/10V" H 3100 5700 50  0000 L CNN
+F 0 "C4" H 3050 5750 50  0000 L CNN
+F 1 "4.7u/10V" H 3050 5650 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric" H 3038 5700 50  0001 C CNN
 F 3 "~" H 3000 5850 50  0001 C CNN
 	1    3000 5850
 	1    0    0    -1  
 $EndComp
-Text GLabel 8900 2500 0    50   Input ~ 0
+Text GLabel 8900 2800 0    50   Input ~ 0
 OUT4
-Text GLabel 8900 2400 0    50   Input ~ 0
+Text GLabel 8900 2700 0    50   Input ~ 0
 OUT3
-Text GLabel 8900 2300 0    50   Input ~ 0
+Text GLabel 8900 2600 0    50   Input ~ 0
 OUT2
-Text GLabel 8900 2200 0    50   Input ~ 0
+Text GLabel 8900 2500 0    50   Input ~ 0
 OUT1
 $Comp
 L Connector_Generic:Conn_01x04 J1
 U 1 1 658F13E6
-P 9100 2300
-F 0 "J1" H 9300 2350 50  0000 R CNN
-F 1 "Multiplex out" H 9700 2250 50  0000 R CNN
-F 2 "Connector_PinHeader_2.00mm:PinHeader_2x02_P2.00mm_Vertical" H 9100 2300 50  0001 C CNN
-F 3 "~" H 9100 2300 50  0001 C CNN
-	1    9100 2300
+P 9100 2600
+F 0 "J1" H 9300 2600 50  0000 R CNN
+F 1 "Multiplex out" H 9700 2500 50  0000 R CNN
+F 2 "Connector_PinHeader_2.00mm:PinHeader_2x02_P2.00mm_Vertical" H 9100 2600 50  0001 C CNN
+F 3 "~" H 9100 2600 50  0001 C CNN
+	1    9100 2600
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -488,7 +488,7 @@ $Comp
 L Device:R R15
 U 1 1 606C55DD
 P 2800 1300
-F 0 "R15" V 2593 1300 50  0001 C CNN
+F 0 "R15" V 3300 1300 50  0000 C CNN
 F 1 "120" V 2800 1300 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 2730 1300 50  0001 C CNN
 F 3 "~" H 2800 1300 50  0001 C CNN
@@ -499,7 +499,7 @@ $Comp
 L Device:R R16
 U 1 1 606C55E7
 P 3000 1300
-F 0 "R16" V 2793 1300 50  0001 C CNN
+F 0 "R16" V 3500 1300 50  0000 C CNN
 F 1 "120" V 3000 1300 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 2930 1300 50  0001 C CNN
 F 3 "~" H 3000 1300 50  0001 C CNN
@@ -510,8 +510,8 @@ $Comp
 L Diode:1N4001 D1
 U 1 1 6594502C
 P 1500 5850
-F 0 "D1" V 1454 5930 50  0001 L CNN
-F 1 "SSL34F" V 1545 5930 50  0001 L CNN
+F 0 "D1" V 1600 5700 50  0000 L CNN
+F 1 "SSL34F" V 1700 5550 50  0000 L CNN
 F 2 "Diode_SMD:D_SOD-123F" H 1500 5675 50  0001 C CNN
 F 3 "http://www.vishay.com/docs/88503/1n4001.pdf" H 1500 5850 50  0001 C CNN
 	1    1500 5850
@@ -526,7 +526,7 @@ Wire Wire Line
 	1500 5700 1500 5600
 Wire Wire Line
 	1500 5600 1750 5600
-Text Notes 1250 5900 0    50   ~ 0
+Text Notes 1300 5750 0    50   ~ 0
 n.f.
 Text GLabel 2900 1150 1    50   Input ~ 0
 OUT2
@@ -572,8 +572,8 @@ $Comp
 L RTB:AVR64DB32-I_RXB IC1
 U 1 1 65D6906D
 P 3500 1500
-F 0 "IC1" V 3500 1700 50  0000 C CNN
-F 1 "AVR64DB32-I_RXB" V 3600 2000 50  0000 C CNN
+F 0 "IC1" V 3500 2250 50  0000 C CNN
+F 1 "AVR64DB32-I_RXB" V 3600 2550 50  0000 C CNN
 F 2 "Package_DFN_QFN:QFN-32-1EP_5x5mm_P0.5mm_EP3.3x3.3mm" H 4950 2400 50  0001 L CNN
 F 3 "https://ww1.microchip.com/downloads/en/DeviceDoc/AVR64DB28-32-48-64-DataSheet-DS40002300A.pdf" H 4950 2300 50  0001 L CNN
 F 4 "AVR64DB32-I/RXB" H 4950 2200 50  0001 L CNN "Description"
@@ -591,7 +591,7 @@ $Comp
 L Device:R R20
 U 1 1 60759709
 P 4100 3250
-F 0 "R20" V 3893 3250 50  0001 C CNN
+F 0 "R20" V 4000 3250 50  0000 C CNN
 F 1 "3.3k" V 4100 3250 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 4030 3250 50  0001 C CNN
 F 3 "~" H 4100 3250 50  0001 C CNN
@@ -697,7 +697,7 @@ $Comp
 L Device:R R17
 U 1 1 606C55F1
 P 2900 1300
-F 0 "R17" V 2693 1300 50  0001 C CNN
+F 0 "R17" V 3400 1300 50  0000 C CNN
 F 1 "120" V 2900 1300 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 2830 1300 50  0001 C CNN
 F 3 "~" H 2900 1300 50  0001 C CNN
@@ -710,7 +710,7 @@ $Comp
 L Device:R R14
 U 1 1 606C55D3
 P 1950 1900
-F 0 "R14" V 1743 1900 50  0001 C CNN
+F 0 "R14" V 1850 1900 50  0000 C CNN
 F 1 "120" V 1950 1900 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 1880 1900 50  0001 C CNN
 F 3 "~" H 1950 1900 50  0001 C CNN
@@ -729,8 +729,8 @@ $Comp
 L Device:R_Pack04 RN1
 U 1 1 661ED67C
 P 3400 1300
-F 0 "RN1" H 3588 1346 50  0001 L CNN
-F 1 "4x 22k" H 3588 1300 50  0000 L CNN
+F 0 "RN1" H 3600 1300 50  0000 L CNN
+F 1 "4x 22k" H 3600 1200 50  0000 L CNN
 F 2 "Resistor_SMD:R_Array_Convex_4x0603" V 3675 1300 50  0001 C CNN
 F 3 "~" H 3400 1300 50  0001 C CNN
 	1    3400 1300
@@ -754,4 +754,12 @@ Wire Wire Line
 	3100 1500 3100 1450
 Text Notes 3600 1250 0    50   ~ 0
 n.f. (for LED dim tuning)
+Text Notes 1750 4400 0    50   Italic 0
+LDO is optional and only to protect CPU against\nhigh voltage on the bus. The D1 protects against\nreverse polarity. Close JP1 if LDO is not fitted.
+Text Notes 3650 3550 0    50   Italic 0
+Note: R20 depends on LED
+Text Notes 8500 2050 0    50   Italic 0
+1x4 terminal connector (optional)
+Text Notes 8650 3000 0    50   Italic 0
+2x2 pin header
 $EndSCHEMATC
